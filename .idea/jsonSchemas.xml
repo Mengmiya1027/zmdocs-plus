@@ -19,6 +19,22 @@
             </SchemaInfo>
           </value>
         </entry>
+        <entry key="nodemon.json">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="nodemon.json" />
+              <option name="relativePathToSchema" value="https://www.schemastore.org/nodemon.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="nodemon.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
       </map>
     </state>
   </component>

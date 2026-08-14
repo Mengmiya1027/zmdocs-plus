@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "postinstall": "patch-package",
-    "docs:dev": "hexo server --watch",
+    "docs:dev": "nodemon",
     "docs:build": "hexo generate",
     "hexo:clean": "hexo clean"
   },
@@ -24,7 +24,8 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-stellar": "^1.39.0"
+    "hexo-theme-stellar": "^1.39.0",
+    "nodemon": "^3.1.14"
   },
   "devDependencies": {
     "patch-package": "^8.0.1"

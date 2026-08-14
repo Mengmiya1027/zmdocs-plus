@@ -1,0 +1,6 @@
+{
+  "watch": ["."],
+  "ext": "yml,yaml",
+  "delay": 500,
+  "exec": "hexo clean && hexo server --watch"
+}

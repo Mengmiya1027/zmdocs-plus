@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ZMdocs-Plus
+title: ZMdocs-plus
 avatar: /public/images/basic/zm2.png
 favicon: /public/images/basic/zm2.png
 subtitle: '稚梦 · 随意写，随意看'
@@ -98,6 +98,10 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: stellar
+
+# hexo-browsersync
+browsersync:
+  reloadOnRestart: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

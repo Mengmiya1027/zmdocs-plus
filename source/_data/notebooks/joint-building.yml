@@ -1,0 +1,13 @@
+name: 共建
+title: 共建
+icon: /public/images/icons/solar--face-scan-circle-bold-duotone.svg
+description: 如果你对我们的作品感兴趣的话……
+base_dir: /notes/joint-building/
+sort: 2
+per_page: 10
+order_by: -updated
+license: true
+share: true
+menu_id: joint-building
+leftbar: explore_nav, recent
+note_leftbar: explore_nav, recent

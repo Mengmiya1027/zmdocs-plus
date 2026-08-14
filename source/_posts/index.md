@@ -1,6 +1,9 @@
+---
+author: admin
+---
 # hyw???
 
-{% image /public/images/basic/zm2.png 我是爷们！ download:true %}
+{% image /public/images/basic/avatar-zm2.png 我是爷们！ download:true %}
 
 {% vote id:zmdocs-hexo Stellar 是最好的 hexo 主题吗？ %}
 

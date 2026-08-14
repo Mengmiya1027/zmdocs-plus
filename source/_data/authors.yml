@@ -4,6 +4,12 @@ default:
   url: https://github.com/Mengmiya1027/ZMdocs-plus
   banner: /public/images/basic/banner-default.jpg
   description: 愿你以渺小爱着这世界
+admin:
+  name: ZMdocs管理员
+  avatar: /public/images/basic/avatar-admin.png
+  url: https://github.com/Mengmiya1027/ZMdocs-plus
+  banner: /public/images/basic/banner-default.jpg
+  description: 哼哼哼~我就是管理员！
 Mengmiya1027:
   name: 愿Wish
   avatar: /public/images/basic/avatar-mmy.jpg

@@ -26,6 +26,11 @@ menubar:
      icon: solar:planet-bold-duotone
      title: 探索
      url: /notes/
+   - id: joint-building
+     theme: '#F59E0B'
+     icon: solar:face-scan-circle-bold-duotone
+     title: 共建
+     url: /notes/joint-building/
    - id: about
      theme: '#F44336'
      icon: solar:atom-bold-duotone

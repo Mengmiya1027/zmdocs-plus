@@ -5,7 +5,6 @@ icon: /public/images/xtc/magisk-delta.png
 cover: /public/images/xtc/magisk-delta.png
 coverpage: false
 description: 想要与xtc斗智斗勇？这里或许可以帮你解决些许问题
-repo: Mengmiya1027/ZMdocs-plus
 leftbar:
   - tree
   - timeline_stellar_releases

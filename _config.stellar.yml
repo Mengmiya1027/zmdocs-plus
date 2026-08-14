@@ -79,6 +79,14 @@ copycode:
   default_text: '复制' # 按钮显示文字
   success_text: '已经复制啦~' # 复制成功信息
 
+# 文章底部「本文贡献者」与「编辑本文」：把本地 source 路径前缀映射到 GitHub 仓库
+data_services:
+  contributors:
+    edit_this_page:
+      '_posts/': https://github.com/Mengmiya1027/zmdocs-plus/blob/main/source/_posts/
+      'wiki/': https://github.com/Mengmiya1027/zmdocs-plus/blob/main/source/wiki/
+    js: /js/services/contributors.js
+
 dependencies:
   lazyload:
     js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js
@@ -110,6 +118,7 @@ footer:
       items:
         - '[近期发布](/)'
         - '[XTC Root Helper](/wiki/)'
+        - '[探索](/notes/)'
     - title: 链接
       items:
         - '[ZMdocs-plus仓库](https://github.com/Mengmiya1027/ZMdocs-plus)'
@@ -135,3 +144,10 @@ inject:
         padding: 0 16px;
       }
       </style>
+
+# 一旦设置源站地址，非源站地址将不会被SEO收录，并且访问时弹出提示
+# 如果访问地址不在备用站主机列表，则警告信息为非法克隆
+canonical:
+  originalHost: zmdocs-plus.pages.dev # 主站点域名主机，例如 xaoxuu.com
+  officialHosts: # 官方主机列表，每行一个，例如 xaoxuu.vercel.app
+    - localhost

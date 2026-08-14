@@ -156,3 +156,6 @@ canonical:
   originalHost: zmdocs-plus.pages.dev # 主站点域名主机，例如 xaoxuu.com
   officialHosts: # 官方主机列表，每行一个，例如 xaoxuu.vercel.app
     - localhost
+
+notebook:
+  auto_excerpt: 100

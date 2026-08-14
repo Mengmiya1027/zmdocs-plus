@@ -1,0 +1,3 @@
+# source/_data/widgets.yml
+- layout: search
+  placeholder: 想搜什么呢？

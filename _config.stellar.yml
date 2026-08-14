@@ -1,0 +1,81 @@
+article:
+  type: tech
+  auto_excerpt: 200
+  related_posts:
+    enable: true
+    title: 您可能感兴趣的文章
+  license: '本文由 <a href="{author.url}">{author.name}</a> 编写，请你在改编、转载时注明出处，谢谢喵~'
+  share: [wechat, weibo, email, link]
+logo:
+  subtitle: '稚梦 · 随意写，随意看 | 我是爷们！'
+menubar:
+  columns: 4 # 一行多少个
+  items: # 可按照自己需求增加，符合以下格式即可
+   - id: post # 页面中高亮的 menu_id
+     theme: '#1BCDFC' # 激活/悬停时的主题色，图标与圆点会以该颜色生成渐变
+     icon: solar:documents-bold-duotone # 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+     title: blog # 标题
+     url: / # 跳转链接，支持相对路径和绝对路径
+   - id: wiki
+     theme: '#3DC550'
+     icon: solar:notebook-bookmark-bold-duotone
+     title: XTC刷机相关
+     url: /wiki/
+   - id: explore
+     theme: '#FA6400'
+     icon: solar:planet-bold-duotone
+     title: 探索
+     url: /explore/
+   - id: social
+     theme: '#F44336'
+     icon: solar:atom-bold-duotone
+     title: 关于
+     url: /about/introduction/
+
+search:
+  service: local_search
+  local_search:
+    field: all
+    path: /search.json
+    content: true
+    skip_search: []
+    codeblock: true
+
+comments:
+  service: giscus
+  # giscus
+  # https://giscus.app/zh-CN
+  giscus:
+    src: https://giscus.app/client.js
+    data-repo: Mengmiya1027/ZMdocs # [在此输入仓库]
+    data-repo-id: R_kgDOTlCvAA # [在此输入仓库 ID]
+    data-category: Announcements # [在此输入分类名]
+    data-category-id: DIC_kwDOTlCvAM4DDNw1
+    data-mapping: pathname
+    data-strict: 0
+    data-reactions-enabled: 1
+    data-emit-metadata: 0
+    data-input-position: top # top, bottom
+    data-theme: noborder_light
+    data-lang: zh-CN
+    data-loading: lazy
+    crossorigin: anonymous
+
+style:
+  leftbar:
+    ui-style: glass
+
+footer:
+  social:
+    github:
+      icon: line-md:github
+      url: https://github.com/Mengmiya1027/ZMdocs-plus
+    music:
+      icon: mingcute:qq-line
+      url: https://qm.qq.com/q/cbQklVGWB2
+    unsplash:
+      icon: '<img src="https://www.alltoolbox.app/logo.png"/>'
+      url: https://www.alltoolbox.app/
+    comments:
+      icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder/social/942ebbf1a4b91.svg"/>'
+      url: https://qm.qq.com/q/Y1Ix4uSE0K

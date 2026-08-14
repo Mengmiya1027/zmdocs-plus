@@ -35,6 +35,8 @@ menubar:
 site_tree:
   notebooks:
     base_dir: notes # 笔记本列表页路径，改为 /notes/
+  author:
+    base_dir: about
 
 search:
   service: local_search
@@ -66,8 +68,28 @@ comments:
     crossorigin: anonymous
 
 style:
+  font-family:
+    body: '"LXGW WenKai",sans-serif'
   leftbar:
     ui-style: glass
+
+copycode:
+  enable: true
+  js: /js/plugins/copycode.js
+  default_text: '复制' # 按钮显示文字
+  success_text: '已经复制啦~' # 复制成功信息
+
+dependencies:
+  lazyload:
+    js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js
+    transition: fade # blur, fade
+    fix_ratio: true # true / false
+
+# 默认打开
+loading:
+  loading: 加载中……请稍后~
+  error: 加载失败T^T
+
 
 footer:
   social:
@@ -83,6 +105,25 @@ footer:
     comments:
       icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder/social/942ebbf1a4b91.svg"/>'
       url: https://qm.qq.com/q/Y1Ix4uSE0K
+  sitemap:
+    - title: 站点地图
+      items:
+        - '[近期发布](/)'
+        - '[XTC Root Helper](/wiki/)'
+    - title: 链接
+      items:
+        - '[ZMdocs-plus仓库](https://github.com/Mengmiya1027/ZMdocs-plus)'
+        - '[稚梦沈星河](https://github.com/SB5133)'
+        - '[愿Wish](https://github.com/Mengmiya1027)'
+        - '[AllToolBox](https://www.alltoolbox.app/)'
+  content: | # 支持 Markdown 格式
+    <script src="//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
+    感谢 <span id="busuanzi_site_uv">Loading...</span> 个小伙伴的第 <span id="busuanzi_site_pv">Loading...</span> 次光临本站！
+    本站总访问量 <span id="busuanzi_site_pv">加载中...</span> 次 
+    本站由 **[{author.name}](/)** 创建。
+    本博客所有文章除特别声明外，均采用 **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)** 许可协议，**转载请注明出处**。
+    **每日一言**：<span class="jinrishici-sentence"></span>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
 # 让左侧栏 linklist 组件（如探索导航）左对齐
 inject:

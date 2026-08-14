@@ -4,8 +4,8 @@
 
 # Site
 title: ZMdocs-plus
-avatar: /public/images/basic/zm2.png
-favicon: /public/images/basic/zm2.png
+avatar: /public/images/basic/avatar-zm2.png
+favicon: /public/images/basic/avatar-zm2.png
 subtitle: '稚梦 · 随意写，随意看'
 description: '稚梦 · 随意写，随意看'
 keywords:
@@ -107,3 +107,8 @@ browsersync:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+inject:
+  head:
+    - <link href="https://fontsapi.zeoseven.com/292/main/result.css" onload="this.rel='stylesheet'" rel="preload" as="style" crossorigin />
+  script:

@@ -1,6 +1,18 @@
+default:
+  name: ZMdocs用户
+  avatar: /public/images/basic/avatar-default.png
+  url: https://github.com/Mengmiya1027/ZMdocs-plus
+  banner: /public/images/basic/banner-default.jpg
+  description: 愿你以渺小爱着这世界
 Mengmiya1027:
   name: 愿Wish
+  avatar: /public/images/basic/avatar-mmy.jpg
+  banner: /public/images/basic/banner-mmy.jpg
   url: https://github.com/Mengmiya1027
+  description: 愿星燃星海
 SB5133:
   name: 稚梦沈星河
+  avatar: /public/images/basic/avatar-zm2.png
+  banner: /public/images/basic/banner-zm.jpg
   url: https://github.com/SB5133
+  description: 随意写，随意看。

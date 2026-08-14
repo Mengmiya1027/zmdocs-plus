@@ -19,18 +19,22 @@ menubar:
    - id: wiki
      theme: '#3DC550'
      icon: solar:notebook-bookmark-bold-duotone
-     title: XTC刷机相关
+     title: XTC Root Helper
      url: /wiki/
-   - id: explore
+   - id: notebooks
      theme: '#FA6400'
      icon: solar:planet-bold-duotone
      title: 探索
-     url: /explore/
-   - id: social
+     url: /notes/
+   - id: about
      theme: '#F44336'
      icon: solar:atom-bold-duotone
      title: 关于
      url: /about/introduction/
+
+site_tree:
+  notebooks:
+    base_dir: notes # 笔记本列表页路径，改为 /notes/
 
 search:
   service: local_search
@@ -79,3 +83,14 @@ footer:
     comments:
       icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder/social/942ebbf1a4b91.svg"/>'
       url: https://qm.qq.com/q/Y1Ix4uSE0K
+
+# 让左侧栏 linklist 组件（如探索导航）左对齐
+inject:
+  head:
+    - |
+      <style>
+      .widget-wrapper.linklist .linklist .link {
+        justify-content: space-between;
+        padding: 0 16px;
+      }
+      </style>

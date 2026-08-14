@@ -1,10 +1,10 @@
-name: xtc-flash
-title: XTC刷机相关文档
+name: XTCのroot方法
+title: XTC基本root方法
 subtitle: '已严肃速刷华强北智能手表！'
-icon: /public/images/icons/solar--watch-square-minimalistic-charge-line-duotone.svg
-cover: /public/images/xtc/bg-care-me-5.png
+icon: /public/images/xtc/magisk-delta.png
+cover: /public/images/xtc/magisk-delta.png
+coverpage: false
 description: 想要与xtc斗智斗勇？这里或许可以帮你解决些许问题
-pin: 1 # 置顶轮播排序值（可选，设置即置顶，数字越大越靠前，true 视作 1）
 repo: Mengmiya1027/ZMdocs-plus
 leftbar:
   - tree

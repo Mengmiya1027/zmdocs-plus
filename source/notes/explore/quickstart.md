@@ -1,5 +1,5 @@
 ---
-wiki: xtc-root
+notebook: explore
 cover: /public/images/ui/bg-2.png
 banner: /public/images/ui/bg-2.png
 poster:

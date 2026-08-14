@@ -6,6 +6,7 @@ poster:
   headline: 随意写，随意看 # 必选
 title: ✨ Introduction
 author: SB5133
+menu_id: about
 ---
 
 # ZMdocs & 稚梦 · 随意写，随意看

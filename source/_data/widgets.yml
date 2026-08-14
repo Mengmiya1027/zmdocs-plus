@@ -1,3 +1,7 @@
-# source/_data/widgets.yml
-- layout: search
-  placeholder: 想搜什么呢？
+# 探索笔记本左侧栏导航
+explore_nav:
+  layout: linklist
+  title: 探索
+  items:
+    - title: "✨ Introduction"
+      url: /notes/explore/quickstart/

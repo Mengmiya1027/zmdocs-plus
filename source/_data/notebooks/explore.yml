@@ -1,0 +1,13 @@
+name: 探索
+title: 探索
+icon: /public/icons/stellar.svg
+description: 欢迎来到探索社区
+base_dir: /notes/explore/
+sort: 1
+per_page: 10
+order_by: -updated
+license: true
+share: true
+menu_id: notebooks
+leftbar: explore_nav, recent
+note_leftbar: explore_nav, recent

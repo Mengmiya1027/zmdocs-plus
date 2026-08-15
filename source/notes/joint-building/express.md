@@ -3,8 +3,7 @@ date: 2023-12-06 21:55
 updated: 2026-08-10 20:45
 notebook: joint-building
 title: 表达类标签组件（34+个）
-references:
-  - '[PR#560 @HcGys](https://github.com/xaoxuu/hexo-theme-stellar/pull/560)'
+author: admin
 ---
 
 {% note 来源说明 本文转载自[Steller官方教程](https://xaoxuu.com/wiki/stellar/tag-plugins/express/)，用于本站开发者及Agent便捷参考。 %}
@@ -728,8 +727,6 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放
 
 {% video bilibili:BV1GP4y1d729 %}
 
-{% video youtube:LB8KwiiUGy0 %}
-
 {% grid c:2 %}
 <!-- cell -->
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
@@ -739,12 +736,6 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放
 
 ```md 写法如下
 {% video bilibili:BV1GP4y1d729 %}
-
-{% video bilibili:BV1GP4y1d729 width:100% autoplay:0 %}
-
-{% video youtube:LB8KwiiUGy0 %}
-
-{% video youtube:LB8KwiiUGy0 width:100% autoplay:0 %}
 
 {% grid c:2 %}
 <!-- cell -->

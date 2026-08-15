@@ -5,7 +5,7 @@ article:
     enable: true
     title: 您可能感兴趣的文章
   license: '本文由 <a href="{author.url}">{author.name}</a> 编写，请你在改编、转载时注明出处，谢谢喵~'
-  share: [wechat, weibo, email, link]
+  share: [wechat, weibo, email, link, qq, qzone]
 logo:
   subtitle: '稚梦 · 随意写，随意看 | 我是爷们！'
 menubar:

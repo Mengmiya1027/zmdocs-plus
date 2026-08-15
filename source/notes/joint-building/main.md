@@ -16,8 +16,8 @@ author: Mengmiya1027
 
 {% quot 编写指南 el:h2 %}
 
-{% link /notes/joint-building/express 表达组件 desc:true %}
+{% link /notes/joint-building/express 表达组件 icon:/public/images/basic/avatar-zm2.png desc:true %}
 
-{% link /notes/joint-building/data 数据组件 desc:true %}
+{% link /notes/joint-building/data 数据组件 icon:/public/images/basic/avatar-zm2.png desc:true %}
 
-{% link /notes/joint-building/container 容器组件 desc:true %}
+{% link /notes/joint-building/container 容器组件 icon:/public/images/basic/avatar-zm2.png desc:true %}

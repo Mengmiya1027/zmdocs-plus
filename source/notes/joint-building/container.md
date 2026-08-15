@@ -4,8 +4,10 @@ date: 2023-12-06 21:55
 updated: 2025-07-19 11:52
 wiki: hexo-stellar
 title: 容器类标签组件（8个）
+author: admin
 ---
 
+{% note 来源说明 本文转载自[Steller官方教程](https://xaoxuu.com/wiki/stellar/tag-plugins/express/)，用于本站开发者及Agent便捷参考。 %}
 
 ## box 盒子容器
 

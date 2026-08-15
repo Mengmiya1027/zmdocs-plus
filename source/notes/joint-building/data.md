@@ -4,7 +4,10 @@ date: 2023-12-06 21:55
 updated: 2026-08-13 23:20
 wiki: hexo-stellar
 title: 数据类标签组件（8个）
+author: admin
 ---
+
+{% note 来源说明 本文转载自[Steller官方教程](https://xaoxuu.com/wiki/stellar/tag-plugins/express/)，用于本站开发者及Agent便捷参考。 %}
 
 ## timeline 时间线
 

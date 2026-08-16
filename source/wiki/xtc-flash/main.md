@@ -8,7 +8,11 @@ references:
 
 # 快速开始
 
-厌倦了原始人小天才的索然无味？那么你可以试试为你的小天才解锁root权限。
+{% quot 厌倦了原始人小天才的索然无味？ %}
+
+那么你可以试试为你的 {% mark 小天才 %} 解锁 {% mark root %} 权限。{% emoji tieba huaji %}
+
+{% hashtag Root https://www.alltoolbox.live/ color:red %} {% hashtag Magisk https://github.com/topjohnwu/Magisk color:green %} {% hashtag Fastboot https://developer.android.com/tools/fastboot color:blue %} {% hashtag ADB https://developer.android.com/tools/adb color:purple %}
 
 {% folding 警告 open:true color:red %}
 Root 并非系统官方开放的功能，通常需要通过特定的漏洞或解锁引导加载程序（Bootloader）来实现，
@@ -23,4 +27,19 @@ Root 并非系统官方开放的功能，通常需要通过特定的漏洞或解
 而获取 Root 权限后，您可以绕过这些限制，实现诸如卸载预装应用、修改系统配置文件、运行需要深层访问的调试工具，甚至刷入第三方固件等操作。
 {% endfolding %}
 
-在此之前，你需要了解与此相关的一些概念及其缩写。本章节涉及到的概念都将在下一页展示。
+{% quot Root 之旅概览 el:h2 %}
+
+{% timeline %}
+<!-- node 准备 -->
+确认机型、备好数据线，并完成软件与数据备份。
+<!-- node 启动 ATB -->
+运行工具、同意免责声明，并断开网络。
+<!-- node 连接手表 -->
+按机型短接，使手表以 ADB 方式连接电脑。
+<!-- node 正式刷写 -->
+全自动刷入 boot、recovery，静候完成。
+<!-- node 后续工作 -->
+牢记保障提醒，享受折腾的乐趣。
+{% endtimeline %}
+
+{% note color:cyan 继续阅读 在此之前，你需要了解与此相关的一些概念及其缩写。本章节涉及到的概念都将在下一页展示。 %}

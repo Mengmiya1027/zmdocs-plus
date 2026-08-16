@@ -10,7 +10,9 @@ references:
 
 在开始动手 root 之前，先了解一下这些基础概念与缩写。
 
-## 概念
+{% hashtag ADB https://developer.android.com/tools/adb %} {% hashtag Fastboot https://developer.android.com/tools/fastboot %} {% hashtag Magisk https://github.com/topjohnwu/Magisk %} {% hashtag TWRP https://twrp.me/ %}
+
+{% quot 概念 el:h2 %}
 
 ### ADB
 
@@ -22,9 +24,14 @@ Android Debug Bridge，简称 adb，在 Android 开发者文档中是这么描�
 
 要在小天才电话手表上启用它，您只需要这么做：
 
-1. 打开拨号盘；
-2. 输入 `*#0769651#*`；
-3. 点按打开 adb 调试选项。
+{% timeline %}
+<!-- node 第 1 步 -->
+打开拨号盘；
+<!-- node 第 2 步 -->
+输入暗码：{% copy *#0769651#* %}
+<!-- node 第 3 步 -->
+点按打开 adb 调试选项。
+{% endtimeline %}
 
 {% note color:cyan 机型差异 对于 Z6 级以下机型，可按照上述步骤操作；Z6 及以上机型，请查看[此教程](https://alltoolbox.live/docs/video.php?uid=473324438013)。 %}
 
@@ -52,9 +59,14 @@ Android Debug Bridge，简称 adb，在 Android 开发者文档中是这么描�
 
 如果你需要对手表 OTA，需要准备对应版本的 OTA 包（通常为 `.zip` 文件），然后：
 
-1. 打开 ATB，选择「常用功能」，进入「离线 OTA」；
-2. 连接电脑与手表；
-3. 在弹出的选择窗口中选择对应的 OTA 包，等待即可。
+{% timeline %}
+<!-- node 第 1 步 -->
+打开 ATB，选择「常用功能」，进入「离线 OTA」；
+<!-- node 第 2 步 -->
+连接电脑与手表；
+<!-- node 第 3 步 -->
+在弹出的选择窗口中选择对应的 OTA 包，等待即可。
+{% endtimeline %}
 
 ### Fastboot（线刷协议）
 
@@ -118,7 +130,7 @@ TWRP 支持触屏交互，可执行文件管理、分区备份与还原、格式
 
 {% note color:yellow 提示 TWRP 刷入错误版本或操作不当将导致设备无法进入系统（变砖）；格式化 Data 分区将清空用户数据，须提前备份。 %}
 
-## 此外的部分缩写
+{% quot 此外的部分缩写 el:h2 %}
 
 | 缩写   | 含义                                                        |
 |:-------|:------------------------------------------------------------|

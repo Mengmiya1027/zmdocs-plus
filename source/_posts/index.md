@@ -1,6 +1,9 @@
 ---
 author: admin
 ---
+
+{% note color:yellow 这是一个测试页面 %}
+
 # hyw???
 
 {% image /public/images/basic/avatar-zm2.png 我是爷们！ download:true %}

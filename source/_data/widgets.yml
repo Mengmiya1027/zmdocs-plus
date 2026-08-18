@@ -5,3 +5,55 @@ explore_nav:
   items:
     - title: "✨ Introduction"
       url: /notes/explore/quickstart/
+
+# 全站欢迎组件：腾讯地图 IP 定位 + 与博主的距离
+welcome_info:
+  layout: markdown
+  title: 🎉 抓到你啦
+  content: |
+    <center style="font-weight: bolder;">👏 欢迎信息 🎉</center>
+
+    &emsp;&emsp;欢迎来自 <span id="welcome-loc" style="color:var(--theme)">未知位置</span> 的小伙伴，三点几啦，一起饮茶呀！您现在距离我们约 <span id="welcome-dist" style="color:var(--theme)">?</span> 公里。
+
+# GitHub 用户卡片（关于页右侧栏）
+ghuser_wish:
+  layout: ghuser
+  username: Mengmiya1027 # 愿Wish
+  avatar: true
+ghuser_zm:
+  layout: ghuser
+  username: SB5133 # 稚梦
+  avatar: true
+
+# 仿制官方 ghrepo 挂件：官方版依赖 page.repo / wiki 仓库配置，无配置时渲染为空；
+# 此版固定展示 Mengmiya1027/ZMdocs-plus，已注册到所有页面的右侧栏。
+# 结构与官方 layout/_partial/widgets/ghrepo.ejs 一致，复用官方 .ghrepo 卡片样式；
+# 数据由主题自带的 /js/services/ghinfo.js 拉取（.ds-ghinfo）。
+ghrepo-zmdocs:
+  layout: markdown
+  content: |
+    <div class="widget-wrapper ghrepo">
+      <div class="items data-service ds-ghinfo" data-api="https://api.github.com/repos/Mengmiya1027/ZMdocs-plus">
+        <a class="repo" href="https://github.com/Mengmiya1027/ZMdocs-plus" target="_blank" rel="external nofollow noopener noreferrer">
+          <div class="repo-name flex-row">
+            <svg class="icon" data-icon="github:repo" aria-hidden="true"></svg>
+            Mengmiya1027/ZMdocs-plus
+          </div>
+          <div class="repo-desc"><span type="text" id="description">&nbsp;</span></div>
+          <div class="grid">
+            <div class="flex-row">
+              <svg class="icon" data-icon="github:star" aria-hidden="true"></svg>
+              <span type="text" id="stargazers_count"></span>
+            </div>
+            <div class="flex-row">
+              <svg class="icon" data-icon="github:fork" aria-hidden="true"></svg>
+              <span type="text" id="forks_count"></span>
+            </div>
+            <div class="flex-row data-service ds-ghinfo" index="0" data-api="https://api.github.com/repos/Mengmiya1027/ZMdocs-plus/tags">
+              <svg class="icon" data-icon="github:tag" aria-hidden="true"></svg>
+              <span type="text" id="latest-tag-name">0</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>

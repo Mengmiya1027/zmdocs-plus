@@ -7,6 +7,7 @@ poster:
 title: ✨ Introduction
 author: SB5133
 menu_id: about
+rightbar: ghuser_wish, ghuser_zm, toc
 ---
 
 # ZMdocs & 稚梦 · 随意写，随意看
@@ -41,12 +42,14 @@ menu_id: about
 
 ## 就两个人
 
+> You can click them👇
+
 {% grid c:2 %}
 <!-- cell -->
-![愿Wish](/public/images/basic/avatar-mmy.jpg)
+[![愿Wish](/public/images/basic/avatar-mmy.jpg)](/author/Mengmiya1027/)
 **愿Wish**：写代码的，负责把东西搭起来，逻辑自洽，能跑就行。
 <!-- cell -->
-![稚梦](/public/images/basic/avatar-zm2.png)
+[![稚梦](/public/images/basic/avatar-zm.jpg)](/author/SB5133/)
 **稚梦**：负责挑刺的，嫌颜色不对、排版不好、语气太冷。然后改完又觉得第一版好像也行。最后两个人吵一架。最后改来改去，达成一个折中版本。
 {% endgrid %}
 

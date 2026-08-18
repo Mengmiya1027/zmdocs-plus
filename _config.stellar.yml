@@ -40,8 +40,36 @@ menubar:
 site_tree:
   notebooks:
     base_dir: notes # 笔记本列表页路径，改为 /notes/
+    rightbar: welcome_info, ghrepo-zmdocs
   author:
-    base_dir: about
+    base_dir: author
+    menu_id: about
+    rightbar: welcome_info, ghrepo-zmdocs
+  # 右侧栏：所有页面统一追加 welcome_info 欢迎组件
+  home:
+    rightbar: welcome_info, ghrepo-zmdocs
+  index_blog:
+    rightbar: welcome_info, ghrepo-zmdocs
+  index_topic:
+    rightbar: welcome_info, ghrepo-zmdocs
+  index_wiki:
+    rightbar: welcome_info, ghrepo-zmdocs
+  post:
+    rightbar: toc, welcome_info, ghrepo-zmdocs
+  topic:
+    rightbar: welcome_info, ghrepo-zmdocs
+  notes:
+    rightbar: welcome_info, ghrepo-zmdocs
+  note:
+    rightbar: toc, welcome_info, ghrepo-zmdocs
+  page:
+    rightbar: toc, welcome_info, ghrepo-zmdocs
+  # 文档内页：官方 ghrepo 依赖 page.repo / wiki 仓库配置，无法渲染，改用仿制版
+  wiki:
+    rightbar: toc, welcome_info, ghrepo-zmdocs
+  # 404 错误页
+  error_page:
+    rightbar: ghrepo-zmdocs
 
 search:
   service: local_search
@@ -92,6 +120,8 @@ data_services:
       'wiki/': https://github.com/Mengmiya1027/zmdocs-plus/blob/main/source/wiki/
     js: /js/services/contributors.js
 
+# GitHub API 加速源（gh* 系列组件：ghuser/ghrepo/ghissues 使用）
+
 dependencies:
   lazyload:
     js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js
@@ -132,7 +162,7 @@ footer:
         - '[AllToolBox](https://www.alltoolbox.app/)'
   content: | # 支持 Markdown 格式
     <script src="//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
-    感谢 <span id="busuanzi_site_uv">Loading...</span> 个小伙伴的第 <span id="busuanzi_site_pv">Loading...</span> 次光临本站！
+    感谢第 <span id="busuanzi_site_uv">Loading...</span> 个小伙伴的第 <span id="busuanzi_site_pv">Loading...</span> 次光临本站！
     本站总访问量 <span id="busuanzi_site_pv">加载中...</span> 次 
     本站由 **[{author.name}](/)** 创建。
     本博客所有文章除特别声明外，均采用 **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)** 许可协议，**转载请注明出处**。
@@ -149,6 +179,62 @@ inject:
         padding: 0 16px;
       }
       </style>
+    - |
+      <style>
+      .banner .title {
+          text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+      }
+      .leftbar-container {
+          box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+      }
+      </style>
+    - |
+      <style>
+      /* ghrepo-zmdocs 仿制挂件：复用官方 .widget-wrapper.ghrepo 卡片样式，
+         抵消 markdown 容器带来的面板背景与嵌套间距 */
+      .widget-wrapper.markdown .widget-body > .widget-wrapper.ghrepo {
+        margin-top: 0;
+      }
+      .widget-wrapper.markdown:has(> .widget-body > .widget-wrapper.ghrepo) .widget-body {
+        background: transparent;
+        padding: 0;
+      }
+      </style>
+  script:
+    - |
+      <script>
+      (function () {
+        var BLOGGER = { lat: 28.8717, lng: 105.4424 }; // 泸州市
+        function toRad(d) { return d * Math.PI / 180; }
+        function haversine(lat1, lng1, lat2, lng2) {
+          var R = 6371;
+          var dLat = toRad(lat2 - lat1);
+          var dLng = toRad(lng2 - lng1);
+          var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                  Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+                  Math.sin(dLng / 2) * Math.sin(dLng / 2);
+          return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        }
+        window.__welcomeLoc = function (res) {
+          var loc = document.getElementById('welcome-loc');
+          var dist = document.getElementById('welcome-dist');
+          if (!loc && !dist) return;
+          if (res && res.status === 0 && res.result) {
+            var r = res.result;
+            var p = r.ad_info ? (r.ad_info.province || '') : '';
+            var c = r.ad_info ? (r.ad_info.city || '') : '';
+            var label = p + (c && c !== p ? ' ' + c : '');
+            if (loc) loc.textContent = label || '未知位置';
+            if (dist && r.location && BLOGGER.lat && BLOGGER.lng) {
+              dist.textContent = Math.round(haversine(BLOGGER.lat, BLOGGER.lng, r.location.lat, r.location.lng));
+            }
+          }
+        };
+        var s = document.createElement('script');
+        s.src = 'https://apis.map.qq.com/ws/location/v1/ip?key=D3TBZ-FM3EZ-UHSX4-T7FCF-5KB62-MIFKZ&output=jsonp&callback=__welcomeLoc';
+        document.head.appendChild(s);
+      })();
+      </script>
 
 # 一旦设置源站地址，非源站地址将不会被SEO收录，并且访问时弹出提示
 # 如果访问地址不在备用站主机列表，则警告信息为非法克隆

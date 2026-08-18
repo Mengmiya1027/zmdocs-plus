@@ -9,5 +9,5 @@ order_by: -updated
 license: true
 share: true
 menu_id: notebooks
-leftbar: explore_nav, recent
+leftbar: recent
 note_leftbar: explore_nav, recent

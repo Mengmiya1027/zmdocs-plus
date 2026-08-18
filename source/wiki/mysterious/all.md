@@ -4,6 +4,8 @@ title: 真的要看吗……
 author: Mengmiya1027
 ---
 
+![](/public/images/mysterious/it-finished？.png)
+
 骗你的，其实啥也没有。。。。。吗？
 
 你掉进陷阱啦~

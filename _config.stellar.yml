@@ -231,7 +231,7 @@ inject:
           }
         };
         var s = document.createElement('script');
-        s.src = 'https://apis.map.qq.com/ws/location/v1/ip?key=D3TBZ-FM3EZ-UHSX4-T7FCF-5KB62-MIFKZ&output=jsonp&callback=__welcomeLoc';
+        s.src = 'https://apis.map.qq.com/ws/location/v1/ip?key=CMRBZ-X3DC5-NXBIX-IIJYI-YY2J7-PDBJU&output=jsonp&callback=__welcomeLoc';
         document.head.appendChild(s);
       })();
       </script>
